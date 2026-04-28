@@ -82,5 +82,4 @@ Bug reports and corrections are welcome via GitHub issues. Please cite the offic
 
 ## See also
 
-- [Pricing](docs/pricing.md) — for commercial / API tiers.
 - [日本語 README](README.ja.md)
