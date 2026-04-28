@@ -42,11 +42,12 @@ data/pet_airlines_v0.1.previous.json
 # Logs
 *.log
 
-# Hugging Face Datasets
-# The hf/ directory itself IS committed to GitHub — it is the canonical source
-# of the HF Dataset Card and the bit-identical snapshot uploaded to HF.
-# However, HF tooling may auto-generate per-machine artifacts inside hf/ that
-# do not belong in the GitHub repo. Add such files here per-file as they appear:
+# HF dataset mirror — data files are build artifacts, mirrored from data/
+# Only README.md (Dataset Card) is tracked because it has independent edit history.
+/hf/*.csv
+/hf/*.json
+/hf/.gitattributes
+# HF tooling may also auto-generate per-machine artifacts; add per-file as they appear:
 # hf/dataset_infos.json
 # hf/.huggingface/
 
