@@ -41,3 +41,15 @@ data/pet_airlines_v0.1.previous.json
 
 # Logs
 *.log
+
+# Hugging Face Datasets
+# The hf/ directory itself IS committed to GitHub — it is the canonical source
+# of the HF Dataset Card and the bit-identical snapshot uploaded to HF.
+# However, HF tooling may auto-generate per-machine artifacts inside hf/ that
+# do not belong in the GitHub repo. Add such files here per-file as they appear:
+# hf/dataset_infos.json
+# hf/.huggingface/
+
+# Internal strategy docs — never commit
+/internal/
+*-internal.md
