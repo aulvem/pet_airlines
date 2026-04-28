@@ -62,9 +62,9 @@ The underlying airline policy text is the property of each airline. We extract s
 
 If you use this dataset in research, products, or downstream tooling, please cite as:
 
-> pet_airlines contributors (2026). *pet_airlines: AI-readable Pet Air Travel Dataset* (v0.1). Available at https://github.com/OWNER/REPO, licensed under CC-BY 4.0.
+> pet_airlines contributors (2026). *pet_airlines: AI-readable Pet Air Travel Dataset* (v0.1). Available at https://github.com/aulvem/pet_airlines, licensed under CC-BY 4.0.
 
-The `OWNER/REPO` placeholder will be replaced with the canonical GitHub path on public release. CC-BY 4.0 requires attribution; the citation above — or any substantively equivalent form that names the dataset, version, and license — satisfies that requirement.
+CC-BY 4.0 requires attribution; the citation above — or any substantively equivalent form that names the dataset, version, and license — satisfies that requirement.
 
 ## Roadmap
 

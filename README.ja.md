@@ -62,9 +62,9 @@ cat data/pet_airlines_v0.1.csv
 
 本データセットを研究・プロダクト・派生ツール等でご利用いただく場合は、以下の形式で出典を明記してください。
 
-> pet_airlines contributors (2026). *pet_airlines: AI-readable Pet Air Travel Dataset* (v0.1). https://github.com/OWNER/REPO, CC-BY 4.0 ライセンス.
+> pet_airlines contributors (2026). *pet_airlines: AI-readable Pet Air Travel Dataset* (v0.1). https://github.com/aulvem/pet_airlines, CC-BY 4.0 ライセンス.
 
-`OWNER/REPO` は公開時に正式な GitHub パスに置換されます。CC-BY 4.0 はクレジット表示を必須としており、上記の形式、もしくはデータセット名・バージョン・ライセンスを明示する実質的に同等な表記であれば要件を満たします。
+CC-BY 4.0 はクレジット表示を必須としており、上記の形式、もしくはデータセット名・バージョン・ライセンスを明示する実質的に同等な表記であれば要件を満たします。
 
 ## ロードマップ
 

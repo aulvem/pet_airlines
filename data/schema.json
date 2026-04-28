@@ -1,7 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/OWNER/REPO/main/data/schema.json",
-  "$comment": "PUBLIC RELEASE TODO — replace OWNER/REPO in $id with the canonical GitHub owner/repo before v0.1 publication. The $id must resolve over HTTPS so JSON-Schema tooling that fetches by URL works against the released schema. Acceptable alternatives: a GitHub Pages URL such as https://OWNER.github.io/pet_airlines/schema/v0.1.json, or removing $id entirely and switching all $ref values to relative paths.",
+  "$id": "https://raw.githubusercontent.com/aulvem/pet_airlines/main/data/schema.json",
   "title": "Pet Airlines Dataset",
   "description": "Schema for the pet_airlines dataset (v0.1). Describes which airlines accept pets on flights to/from Japan, including cabin/baggage/cargo policies, brachycephalic restrictions, weight and carrier size limits, fees, and required documents. English fields are master; Japanese fields are localized views.",
   "type": "object",
