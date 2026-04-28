@@ -11,6 +11,11 @@ The web is full of human-readable pet travel guides; almost none of them are usa
 - Tooling (`scripts/`) that re-fetches sources and re-extracts on a weekly cadence.
 - Diff-based change tracking via Git, so consumers can audit *what* changed and *when*.
 
+## Where to find this dataset
+
+- **GitHub** (this repo) — canonical source, full extraction history, weekly update pipeline.
+- **Hugging Face Datasets** — [Aulvem/pet-airlines](https://huggingface.co/datasets/Aulvem/pet-airlines) — mirror with auto-generated dataset preview and `datasets` library integration.
+
 ## v0.1 scope
 
 | | |
