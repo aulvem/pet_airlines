@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/OWNER/REPO/main/data/schema.json",
+  "$comment": "PUBLIC RELEASE TODO — replace OWNER/REPO in $id with the canonical GitHub owner/repo before v0.1 publication. The $id must resolve over HTTPS so JSON-Schema tooling that fetches by URL works against the released schema. Acceptable alternatives: a GitHub Pages URL such as https://OWNER.github.io/pet_airlines/schema/v0.1.json, or removing $id entirely and switching all $ref values to relative paths.",
+  "title": "Pet Airlines Dataset",
+  "description": "Schema for the pet_airlines dataset (v0.1). Describes which airlines accept pets on flights to/from Japan, including cabin/baggage/cargo policies, brachycephalic restrictions, weight and carrier size limits, fees, and required documents. English fields are master; Japanese fields are localized views.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_name",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Semantic-ish version of this dataset schema (e.g. \"0.1\")."
+    },
+    "dataset_name": {
+      "type": "string",
+      "const": "pet_airlines"
+    },
+    "license": {
+      "type": "string",
+      "description": "License under which the dataset is distributed (e.g. \"CC-BY 4.0\")."
+    },
+    "disclaimer": {
+      "type": "string"
+    },
+    "last_generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "records": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/airline_record" }
+    }
+  },
+  "$defs": {
+    "tri_state": {
+      "description": "Tri-state allowance flag with explicit unknown.",
+      "type": "string",
+      "enum": ["yes", "no", "conditional", "unknown"]
+    },
+    "confidence_level": {
+      "description": "Confidence in the correctness of the record at last_checked_at.",
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "language_code": {
+      "type": "string",
+      "description": "Primary language of the source page. Either an ISO 639-1 code from the recognized set, or \"multi\" if the page mixes languages. Aligned with skills/pet-airline-extraction/SKILL.md §1.",
+      "enum": ["en", "ja", "zh", "ko", "de", "multi"]
+    },
+    "airline_record": {
+      "type": "object",
+      "required": [
+        "id",
+        "airline_name_en",
+        "official_url",
+        "source_language",
+        "last_checked_at",
+        "confidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable record identifier, e.g. \"pet_airline_001\".",
+          "pattern": "^pet_airline_[0-9]{3,}$"
+        },
+        "airline_name_en": {
+          "type": "string",
+          "description": "Airline name in English (master)."
+        },
+        "airline_name_ja": {
+          "type": ["string", "null"],
+          "description": "Airline name in Japanese (localized view)."
+        },
+        "official_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Official pet policy URL. Required — every record must cite an official source."
+        },
+        "source_language": {
+          "$ref": "#/$defs/language_code"
+        },
+        "pet_type": {
+          "type": "array",
+          "description": "Pet species/categories accepted. Empty array = no pets accepted. service_animal and emotional_support_animal are tracked separately because their fee/weight/size rules typically differ — see SKILL.md §2 rule 6.",
+          "items": {
+            "type": "string",
+            "enum": ["dog", "cat", "bird", "rabbit", "small_mammal", "service_animal", "emotional_support_animal", "other"]
+          },
+          "uniqueItems": true
+        },
+        "cabin_allowed":           { "$ref": "#/$defs/tri_state" },
+        "checked_baggage_allowed": { "$ref": "#/$defs/tri_state" },
+        "cargo_allowed":           { "$ref": "#/$defs/tri_state" },
+        "brachycephalic_restriction": {
+          "type": "object",
+          "description": "Restrictions on snub-nosed (brachycephalic) breeds such as French Bulldogs and Persians.",
+          "required": ["applies"],
+          "properties": {
+            "applies": {
+              "type": "string",
+              "description": "\"conditional\" covers seasonal / aircraft / route / breed-specific carve-outs. Use \"yes\" only for outright bans; \"no\" only when the page explicitly disclaims any restriction.",
+              "enum": ["yes", "no", "conditional", "unknown"]
+            },
+            "details_en": { "type": ["string", "null"] },
+            "details_ja": { "type": ["string", "null"] }
+          }
+        },
+        "weight_limit": {
+          "type": "object",
+          "description": "Maximum allowed weight. \"scope\" indicates whether the limit covers pet only, carrier only, or pet+carrier combined.",
+          "properties": {
+            "value": { "type": ["number", "null"], "minimum": 0 },
+            "unit":  { "type": "string", "enum": ["kg", "lb"] },
+            "scope": {
+              "type": "string",
+              "enum": ["pet_only", "carrier_only", "pet_plus_carrier", "unknown"]
+            },
+            "notes_en": { "type": ["string", "null"] },
+            "notes_ja": { "type": ["string", "null"] }
+          }
+        },
+        "carrier_size_limit": {
+          "type": "object",
+          "description": "Maximum carrier dimensions. Either provide L/W/H individually, sum_cm (linear total), or both.",
+          "properties": {
+            "length_cm": { "type": ["number", "null"], "minimum": 0 },
+            "width_cm":  { "type": ["number", "null"], "minimum": 0 },
+            "height_cm": { "type": ["number", "null"], "minimum": 0 },
+            "sum_cm":    { "type": ["number", "null"], "minimum": 0 },
+            "notes_en":  { "type": ["string", "null"] },
+            "notes_ja":  { "type": ["string", "null"] }
+          }
+        },
+        "reservation_method_en": { "type": ["string", "null"] },
+        "reservation_method_ja": { "type": ["string", "null"] },
+        "required_documents_en": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "required_documents_ja": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "fee_info_en": { "type": ["string", "null"] },
+        "fee_info_ja": { "type": ["string", "null"] },
+        "notes_en":    { "type": ["string", "null"] },
+        "notes_ja":    { "type": ["string", "null"] },
+        "last_checked_at": {
+          "type": "string",
+          "format": "date",
+          "description": "Date (YYYY-MM-DD) when the record was last verified against the official source."
+        },
+        "confidence": { "$ref": "#/$defs/confidence_level" }
+      }
+    }
+  }
+}

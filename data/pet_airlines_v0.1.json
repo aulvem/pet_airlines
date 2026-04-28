@@ -1,0 +1,503 @@
+{
+  "schema_version": "0.1",
+  "dataset_name": "pet_airlines",
+  "license": "CC-BY 4.0",
+  "disclaimer": "Reference only. Always verify with official sources before travel.",
+  "last_generated_at": "2026-04-28T00:00:00Z",
+  "records": [
+    {
+      "id": "pet_airline_001",
+      "airline_name_en": "Japan Airlines",
+      "airline_name_ja": "日本航空(JAL)",
+      "official_url": "https://www.jal.co.jp/jp/en/inter/support/pet/",
+      "source_language": "en",
+      "pet_type": ["dog", "cat"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "yes",
+      "brachycephalic_restriction": {
+        "applies": "yes",
+        "details_en": "French Bulldogs and Bulldogs not accepted.",
+        "details_ja": "フレンチブルドッグおよびブルドッグは受託不可"
+      },
+      "weight_limit": {
+        "value": null,
+        "unit": "kg",
+        "scope": "unknown",
+        "notes_en": "Page does not publish a weight cap; rental crate sizes are listed but no weight limit is given.",
+        "notes_ja": "公式ページに重量上限の記載なし。レンタルクレートのサイズのみ掲載"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": null,
+        "notes_en": "IATA-compliant crate required; must allow standing, lying, turning. Rental crate sizes available: L 45 x 45 x 41 cm, M 32 x 32 x 39 cm.",
+        "notes_ja": "IATA基準クレート必須。立つ・横たわる・向きを変えるが可能であること。レンタルクレートサイズ: L 45×45×41 cm、M 32×32×39 cm"
+      },
+      "reservation_method_en": "Advance reservation via JAL Contact Center; provide crate size, total weight, pet type, and age.",
+      "reservation_method_ja": "JALコンタクトセンターで事前予約。クレートサイズ、総重量、種類・年齢を申告",
+      "required_documents_en": [
+        "Import/export documents required by destination and transit countries",
+        "Airport forms",
+        "CDC check for dogs to the US",
+        "Consent letter"
+      ],
+      "required_documents_ja": [
+        "輸出入国の検疫書類",
+        "空港での書類署名",
+        "米国向け犬はCDC確認",
+        "同意書"
+      ],
+      "fee_info_en": "Applicable charges provided at check-in; exact fee not published on the page.",
+      "fee_info_ja": "チェックイン時に適用料金案内。公式ページ上の具体額は不明",
+      "notes_en": "Dogs and cats must be at least 8 weeks old; pregnant pets not accepted; check in at least 120 minutes before departure.",
+      "notes_ja": "犬猫は生後8週以上。妊娠中不可。出発120分前までのチェックイン推奨",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_002",
+      "airline_name_en": "All Nippon Airways",
+      "airline_name_ja": "全日本空輸(ANA)",
+      "official_url": "https://www.ana.co.jp/en/us/travel-information/pet-policy/",
+      "source_language": "en",
+      "pet_type": ["dog", "cat", "small_mammal"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "conditional",
+      "brachycephalic_restriction": {
+        "applies": "conditional",
+        "details_en": "Short-nosed dog breeds not accepted between 2026-05-01 and 2026-10-31 each year (annually recurring seasonal embargo; verify yearly).",
+        "details_ja": "短頭種犬は毎年5月1日(2026-05-01)から10月31日(2026-10-31)まで受託不可。年次の季節制限のため毎年要確認"
+      },
+      "weight_limit": {
+        "value": 45,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Maximum pet+cage 45 kg.",
+        "notes_ja": "ペット+ケージ最大45 kg"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": 292,
+        "notes_en": "IATA-compliant cage. Must allow standing, sitting, sleeping, turning. Maximum sum-of-3-sides 292 cm.",
+        "notes_ja": "IATA基準ケージ。立つ・座る・眠る・向きを変えるが可能であること。3辺合計292cm以下"
+      },
+      "reservation_method_en": "Phone reservation only; ANA-operated flights only.",
+      "reservation_method_ja": "電話予約のみ。ANA運航便のみ",
+      "required_documents_en": [
+        "Export quarantine certificate",
+        "Health certificate",
+        "Import certificate may be required",
+        "Japan import notification for dogs/cats at least 40 days before arrival"
+      ],
+      "required_documents_ja": [
+        "輸出検疫証明書",
+        "健康証明書",
+        "輸入証明書(必要時)",
+        "日本輸入時は犬猫の40日前届出"
+      ],
+      "fee_info_en": "International across areas: JPY 40000 / USD 400 / CAD 400 / EUR 300. Within an area: JPY 25000 / USD 250 / CAD 250 / EUR 200. Domestic: separate fee structure.",
+      "fee_info_ja": "国際線エリア跨ぎ: JPY 40,000 / USD 400 / CAD 400 / EUR 300。同一エリア: JPY 25,000 / USD 250 / CAD 250 / EUR 200。国内線は別料金",
+      "notes_en": "UK, Hong Kong, and Australia may require routing via a cargo agent rather than airport checked-pet handling.",
+      "notes_ja": "英国・香港・豪州などは空港受託ではなく貨物代理店対応が必要な場合あり",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_003",
+      "airline_name_en": "ZIPAIR",
+      "airline_name_ja": "ジップエア",
+      "official_url": "https://www.zipair.net/en/faq/animal/bringingAnimalsOnBoard",
+      "source_language": "multi",
+      "pet_type": ["dog", "cat"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "no",
+      "cargo_allowed": "unknown",
+      "brachycephalic_restriction": {
+        "applies": "unknown",
+        "details_en": "unknown",
+        "details_ja": "unknown"
+      },
+      "weight_limit": {
+        "value": null,
+        "unit": "kg",
+        "scope": "unknown",
+        "notes_en": "unknown",
+        "notes_ja": "unknown"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": null,
+        "notes_en": "unknown",
+        "notes_ja": "unknown"
+      },
+      "reservation_method_en": "General pets not accepted in cabin or as checked baggage. Service dogs only, by request at booking.",
+      "reservation_method_ja": "一般のペットは客室・受託手荷物いずれも不可。補助犬のみ予約時に申告",
+      "required_documents_en": [
+        "Unknown for general pets",
+        "Service dog documentation may be required"
+      ],
+      "required_documents_ja": [
+        "一般のペットは不明",
+        "補助犬は所定書類が必要な場合あり"
+      ],
+      "fee_info_en": "Not applicable (general pets not transported).",
+      "fee_info_ja": "対象外(一般のペット輸送は行っていない)",
+      "notes_en": "Service dogs (guide dogs, assistance dogs, hearing dogs) may be carried in cabin free of charge.",
+      "notes_ja": "盲導犬・介助犬・聴導犬等の補助犬は無料で客室同伴可",
+      "last_checked_at": "2026-04-27",
+      "confidence": "medium"
+    },
+    {
+      "id": "pet_airline_004",
+      "airline_name_en": "Korean Air",
+      "airline_name_ja": "大韓航空",
+      "official_url": "https://www.koreanair.com/contents/plan-your-travel/special-assistance/travel-with-pets?hl=en",
+      "source_language": "multi",
+      "pet_type": ["dog", "cat", "bird"],
+      "cabin_allowed": "yes",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "yes",
+      "brachycephalic_restriction": {
+        "applies": "yes",
+        "details_en": "Brachycephalic dogs and cats cannot be accepted as cargo.",
+        "details_ja": "短頭種の犬・猫は貨物としての受託不可"
+      },
+      "weight_limit": {
+        "value": 7,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Cabin: pet+carrier up to 7 kg. Cargo fee table has bands of under 32 kg and 33-45 kg, indicating cargo allows up to 45 kg.",
+        "notes_ja": "機内: ペット+キャリア7kgまで。貨物室の料金は32kg以下と33-45kgの帯があり、貨物室は最大45kgまで"
+      },
+      "carrier_size_limit": {
+        "length_cm": 45,
+        "width_cm": 32,
+        "height_cm": 19,
+        "sum_cm": null,
+        "notes_en": "Cabin carrier: 32 cm W x 45 cm D x 19 cm H. Soft carriers up to 25 cm height if compressible to 19 cm.",
+        "notes_ja": "機内キャリア: 32cm幅×45cm奥行×19cm高さ。ソフトキャリアは19cmに圧縮可能なら25cm高まで可"
+      },
+      "reservation_method_en": "Request pet travel service in advance via Korean Air website or Service Center; international reservation at least 48 hours before flight.",
+      "reservation_method_ja": "Webまたはサービスセンターで事前申請。国際線は出発48時間前まで",
+      "required_documents_en": [
+        "Country-specific documents required (varies by destination)",
+        "Details unknown from accessible official text"
+      ],
+      "required_documents_ja": [
+        "国・地域別書類が必要",
+        "詳細は渡航先条件に依存"
+      ],
+      "fee_info_en": "Service fees shown by route and weight; e.g., per cage under 32 kg and 33-45 kg bands.",
+      "fee_info_ja": "路線・重量帯別。32kg以下、33-45kgの料金帯あり",
+      "notes_en": "Dogs, cats, and pet birds: 8 weeks+ can travel in cabin; 16 weeks+ can be transported in the cargo hold.",
+      "notes_ja": "犬・猫・ペット鳥。機内は生後8週以上、貨物室は生後16週以上",
+      "last_checked_at": "2026-04-27",
+      "confidence": "medium"
+    },
+    {
+      "id": "pet_airline_005",
+      "airline_name_en": "Asiana Airlines",
+      "airline_name_ja": "アシアナ航空",
+      "official_url": "https://flyasiana.com/C/KR/EN/contents/traveling-with-pets",
+      "source_language": "en",
+      "pet_type": ["dog", "cat", "bird"],
+      "cabin_allowed": "yes",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "unknown",
+      "brachycephalic_restriction": {
+        "applies": "yes",
+        "details_en": "Checked-in transport of short-nosed animals discontinued. Listed short-nosed dogs and cats are restricted.",
+        "details_ja": "短頭種動物の受託手荷物による輸送は廃止。指定の短頭種の犬・猫は制限あり"
+      },
+      "weight_limit": {
+        "value": 7,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Cabin: pet+cage up to 7 kg. Checked baggage: pet+cage up to 45 kg.",
+        "notes_ja": "機内: ペット+ケージ7kgまで。受託手荷物: ペット+ケージ45kgまで"
+      },
+      "carrier_size_limit": {
+        "length_cm": 45,
+        "width_cm": 32,
+        "height_cm": 21,
+        "sum_cm": null,
+        "notes_en": "Cabin hard cage max L 45 x W 32 x H 21 cm. Soft cage up to H 26 cm if compressible to H 21 cm. Checked baggage: max sum-of-3-sides 285 cm and max height 84 cm.",
+        "notes_ja": "機内ハードケージ最大L45×W32×H21cm。ソフトケージはH21cmに圧縮可能ならH26cmまで可。受託手荷物は3辺合計285cm以下、高さ84cm以下"
+      },
+      "reservation_method_en": "Contact reservation center; international reservation at least 48 business hours before departure.",
+      "reservation_method_ja": "予約センターへ連絡。国際線は出発48営業時間前まで",
+      "required_documents_en": [
+        "Quarantine documents",
+        "Rabies vaccination certificate and medical report (Korea export context)",
+        "CDC form for US-bound dogs"
+      ],
+      "required_documents_ja": [
+        "検疫書類",
+        "韓国出発時は狂犬病予防接種証明書・診断書等",
+        "米国向け犬はCDCフォーム"
+      ],
+      "fee_info_en": "Japan / China / Taiwan / Hong Kong / Mongolia round-trip Korea: KRW 140000 / USD 140 up to 32 kg; KRW 290000 / USD 290 for 32-45 kg. Other route bands listed.",
+      "fee_info_ja": "韓国-日本等は32kg以下KRW140,000 / USD140、32-45kgはKRW290,000 / USD290。他路線帯あり",
+      "notes_en": "A321 international routes do not permit checked pet transport. Aircraft and route restrictions apply.",
+      "notes_ja": "A321国際線は受託不可。機材・路線制限あり",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_006",
+      "airline_name_en": "Singapore Airlines",
+      "airline_name_ja": "シンガポール航空",
+      "official_url": "https://www.singaporeair.com/en_UK/sg/travel-info/special-assistance/travelling-with-pets/",
+      "source_language": "en",
+      "pet_type": ["cat", "dog"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "conditional",
+      "brachycephalic_restriction": {
+        "applies": "yes",
+        "details_en": "Many brachycephalic dog and cat breeds not accepted as checked baggage.",
+        "details_ja": "多くの短頭種の犬・猫は受託手荷物として受託不可"
+      },
+      "weight_limit": {
+        "value": 32,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Checked baggage: pet+container up to 32 kg. Over 32 kg requires routing via cargo agent (not checked baggage).",
+        "notes_ja": "受託手荷物: ペット+容器32kgまで。32kg超は貨物代理店扱い"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": null,
+        "notes_en": "IATA standards. Maximum container height varies by aircraft: A350 70 cm, A380 60 cm, B777 101 cm, B787 111 cm.",
+        "notes_ja": "IATA基準。最大容器高さは機材依存: A350 70cm、A380 60cm、B777 101cm、B787 111cm"
+      },
+      "reservation_method_en": "Contact Singapore Airlines at least two weeks before departure.",
+      "reservation_method_ja": "出発2週間前までにシンガポール航空へ連絡",
+      "required_documents_en": [
+        "Singapore export: export license",
+        "Singapore export: indemnity form",
+        "Singapore export: veterinary health certificate",
+        "Singapore export: rabies vaccination letter",
+        "Singapore export: transshipment license (if any)",
+        "Singapore export: pet passport (if any)",
+        "Singapore import/transit: import/transshipment license",
+        "Singapore import/transit: indemnity form",
+        "Singapore import/transit: veterinary health certificate",
+        "Singapore import/transit: vaccination records with microchip number"
+      ],
+      "required_documents_ja": [
+        "シンガポール発: 輸出許可",
+        "シンガポール発: 免責書",
+        "シンガポール発: 獣医健康証明書",
+        "シンガポール発: 狂犬病接種書",
+        "シンガポール発: 積替許可(必要時)",
+        "シンガポール発: ペットパスポート(必要時)",
+        "シンガポール着・経由: 輸入/積替許可",
+        "シンガポール着・経由: 免責書",
+        "シンガポール着・経由: 獣医健康証明書",
+        "シンガポール着・経由: マイクロチップ番号付き接種記録"
+      ],
+      "fee_info_en": "Treated as additional baggage; not part of free baggage allowance; prepaid/discounted rates not available.",
+      "fee_info_ja": "無料受託手荷物に含まれず追加手荷物扱い。事前割引不可",
+      "notes_en": "Boeing 737 flights not accepted due to no temperature control in the cargo hold. Some destinations not accepted.",
+      "notes_ja": "B737運航便は貨物室温度管理不可のため不可。目的地別制限あり",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_007",
+      "airline_name_en": "Cathay Pacific",
+      "airline_name_ja": "キャセイパシフィック航空",
+      "official_url": "https://www.cathaypacific.com/cx/en_JP/prepare-trip/help-for-passengers/travelling-with-animals/overview-cargo.html",
+      "source_language": "en",
+      "pet_type": ["dog", "cat"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "no",
+      "cargo_allowed": "yes",
+      "brachycephalic_restriction": {
+        "applies": "unknown",
+        "details_en": "unknown",
+        "details_ja": "unknown"
+      },
+      "weight_limit": {
+        "value": null,
+        "unit": "kg",
+        "scope": "unknown",
+        "notes_en": "unknown",
+        "notes_ja": "unknown"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": null,
+        "notes_en": "unknown",
+        "notes_ja": "unknown"
+      },
+      "reservation_method_en": "Cathay Cargo handles pet shipments. From 2025-09-01, direct booking is accepted only from IPATA or ATA member parties.",
+      "reservation_method_ja": "キャセイカーゴ扱い。2025-09-01以降、直接予約はIPATA/ATA会員等に限定",
+      "required_documents_en": [
+        "Documents not retrieved from accessible official text"
+      ],
+      "required_documents_ja": [
+        "公式本文から書類要件は取得できず"
+      ],
+      "fee_info_en": "unknown",
+      "fee_info_ja": "unknown",
+      "notes_en": "Pets are not allowed in the cabin except for service dogs. New bookings for pets as check-in baggage are not accepted until further notice; cargo handling only.",
+      "notes_ja": "補助犬を除き客室不可。ペットのチェックイン手荷物の新規予約は当面停止、貨物扱い",
+      "last_checked_at": "2026-04-27",
+      "confidence": "medium"
+    },
+    {
+      "id": "pet_airline_008",
+      "airline_name_en": "EVA Air",
+      "airline_name_ja": "エバー航空",
+      "official_url": "https://www.evaair.com/en-jp/fly-prepare/baggage/travelling-with-pets/",
+      "source_language": "en",
+      "pet_type": ["dog", "cat", "rabbit"],
+      "cabin_allowed": "no",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "unknown",
+      "brachycephalic_restriction": {
+        "applies": "conditional",
+        "details_en": "Brachycephalic dog/cat breeds and mixes restricted seasonally. Listed breeds prohibited year-round on Southeast Asia routes.",
+        "details_ja": "短頭種犬猫およびその交雑種は季節制限あり。指定品種は東南アジア路線では通年禁止"
+      },
+      "weight_limit": {
+        "value": 45,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Checked: pet+cage up to 45 kg.",
+        "notes_ja": "受託: ペット+ケージ45kgまで"
+      },
+      "carrier_size_limit": {
+        "length_cm": null,
+        "width_cm": null,
+        "height_cm": null,
+        "sum_cm": 292,
+        "notes_en": "IATA-style rigid plastic container. Dimensions sized to the animal's height/length/width. Containers exceeding sum-of-3-sides 292 cm not accepted.",
+        "notes_ja": "IATA基準のリジッドプラスチック容器。寸法は動物の体高・体長・体幅に応じる。3辺合計292cm超は受託不可"
+      },
+      "reservation_method_en": "Inform EVA Air reservation staff at least 48 hours before departure. Submit Passenger's Declaration for Live Animal in duplicate at the airport.",
+      "reservation_method_ja": "出発48時間前までに予約スタッフへ申告。生きた動物に関する申告書2部を空港で提出",
+      "required_documents_en": [
+        "Valid health certificate(s)",
+        "Valid vaccination certificate(s)",
+        "Other documents required by departure / transit / entry countries"
+      ],
+      "required_documents_ja": [
+        "有効な健康証明書",
+        "有効なワクチン証明書",
+        "出発・経由・入国国が求めるその他書類"
+      ],
+      "fee_info_en": "Excess baggage charge: <=32 kg = 2 units; >32 kg = 4 units. No oversized fee. Service dogs free.",
+      "fee_info_ja": "超過手荷物扱い。32kg以下は2単位、32kg超は4単位。サイズ超過料金なし。補助犬無料",
+      "notes_en": "A321 not accepted. B787 long-haul not accepted. Some route/aircraft limits.",
+      "notes_ja": "A321不可。B787長距離不可。路線・機材制限あり",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_009",
+      "airline_name_en": "Lufthansa",
+      "airline_name_ja": "ルフトハンザ航空",
+      "official_url": "https://www.lufthansa.com/us/en/travelling-with-animals",
+      "source_language": "en",
+      "pet_type": ["dog", "cat"],
+      "cabin_allowed": "yes",
+      "checked_baggage_allowed": "yes",
+      "cargo_allowed": "yes",
+      "brachycephalic_restriction": {
+        "applies": "yes",
+        "details_en": "Snub-nosed breeds and certain fighting-dog breeds restricted. Snub-nosed breeds cannot be transported in the hold per the Lufthansa checklist.",
+        "details_ja": "短頭種および一部の闘犬種に制限あり。短頭種はLufthansaのチェックリスト上、貨物室輸送不可"
+      },
+      "weight_limit": {
+        "value": 8,
+        "unit": "kg",
+        "scope": "pet_plus_carrier",
+        "notes_en": "Cabin: pet+carrier max 8 kg. Pets over 8 kg must travel in the cargo hold; container/route limits apply.",
+        "notes_ja": "機内: ペット+キャリア最大8kg。8kg超はカーゴ室扱い。容器・路線別の制限あり"
+      },
+      "carrier_size_limit": {
+        "length_cm": 55,
+        "width_cm": 40,
+        "height_cm": 23,
+        "sum_cm": 118,
+        "notes_en": "Cabin carrier max 55 x 40 x 23 cm (total 118 cm). Hold container must meet current IATA requirements.",
+        "notes_ja": "機内キャリア最大55×40×23cm(合計118cm)。貨物室容器は最新IATA基準準拠"
+      },
+      "reservation_method_en": "Register online or via travel agency up to 72 hours before departure. Service Center booking accepted at the latest 24 hours before departure.",
+      "reservation_method_ja": "出発72時間前までにオンラインまたは旅行代理店、遅くとも24時間前までにサービスセンター",
+      "required_documents_en": [
+        "Official / veterinary documents such as EU pet passport or vaccination records / health certificates",
+        "USA CDC documents for dogs"
+      ],
+      "required_documents_ja": [
+        "EUペットパスポートまたはワクチン記録・健康証明書(公的・獣医発行)",
+        "米国向け犬はCDC関連書類"
+      ],
+      "fee_info_en": "Fees depend on route and container size. Paid at check-in / service counter. Hold transfer surcharge may apply.",
+      "fee_info_ja": "路線・容器サイズにより変動。空港で支払い。貨物室輸送は乗継サーチャージあり得る",
+      "notes_en": "Minimum age: generally 12 weeks; 15 weeks to/from/via Germany; dogs to USA 6 months.",
+      "notes_ja": "最低年齢は通常12週、ドイツ発着・経由15週、米国向け犬6か月",
+      "last_checked_at": "2026-04-27",
+      "confidence": "high"
+    },
+    {
+      "id": "pet_airline_010",
+      "airline_name_en": "United Airlines",
+      "airline_name_ja": "ユナイテッド航空",
+      "official_url": "https://www.united.com/en/us/fly/travel/traveling-with-pets.html",
+      "source_language": "en",
+      "pet_type": ["cat", "dog"],
+      "cabin_allowed": "yes",
+      "checked_baggage_allowed": "no",
+      "cargo_allowed": "conditional",
+      "brachycephalic_restriction": {
+        "applies": "unknown",
+        "details_en": "unknown",
+        "details_ja": "unknown"
+      },
+      "weight_limit": {
+        "value": null,
+        "unit": "kg",
+        "scope": "unknown",
+        "notes_en": "No official weight limit found on accessible page; pet must fit comfortably in carrier.",
+        "notes_ja": "公式ページに明示の重量制限なし。キャリア内で快適に収まる必要あり"
+      },
+      "carrier_size_limit": {
+        "length_cm": 44,
+        "width_cm": 30,
+        "height_cm": 22,
+        "sum_cm": null,
+        "notes_en": "Hard-sided max 22 x 44 x 30 cm (H x L x W; equivalent to 9 x 17.5 x 12 in). Soft-sided dimension limit unknown from accessible official text.",
+        "notes_ja": "ハードサイド最大22×44×30cm(高さ×長さ×幅、9×17.5×12in相当)。ソフトサイドの寸法上限は取得した公式本文では不明"
+      },
+      "reservation_method_en": "Add pet to reservation via United booking / manage booking; exact flow unknown from accessible official text.",
+      "reservation_method_ja": "予約・管理画面でペット追加と思われるが、取得できた公式本文では詳細不明",
+      "required_documents_en": [
+        "Destination import requirements (specifics unknown from accessible official text)"
+      ],
+      "required_documents_ja": [
+        "渡航先の輸入条件(公式本文から詳細取得不可)"
+      ],
+      "fee_info_en": "unknown",
+      "fee_info_ja": "unknown",
+      "notes_en": "Pets can only fly in cargo for certain active-duty military or State Department employees; general pet cargo not available.",
+      "notes_ja": "貨物輸送は一部の現役軍人・国務省職員等に限定。一般向け貨物輸送は不可",
+      "last_checked_at": "2026-04-27",
+      "confidence": "medium"
+    }
+  ]
+}

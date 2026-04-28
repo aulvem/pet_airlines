@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.1",
+  "description": "URL list consumed by scripts/fetch.js. One entry per record in pet_airlines_v0.1.json. Each source must reference the airline's own official pet-policy page; PDFs are accepted when they are the canonical policy document. id values are stable across weekly runs and match data/pet_airlines_v0.1.json.records[].id.",
+  "sources": [
+    {
+      "id": "pet_airline_001",
+      "airline_name_en": "Japan Airlines",
+      "url": "https://www.jal.co.jp/jp/en/inter/support/pet/",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_002",
+      "airline_name_en": "All Nippon Airways",
+      "url": "https://www.ana.co.jp/en/us/travel-information/pet-policy/",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_003",
+      "airline_name_en": "ZIPAIR",
+      "url": "https://www.zipair.net/en/faq/animal/bringingAnimalsOnBoard",
+      "source_language": "multi"
+    },
+    {
+      "id": "pet_airline_004",
+      "airline_name_en": "Korean Air",
+      "url": "https://www.koreanair.com/contents/plan-your-travel/special-assistance/travel-with-pets?hl=en",
+      "source_language": "multi"
+    },
+    {
+      "id": "pet_airline_005",
+      "airline_name_en": "Asiana Airlines",
+      "url": "https://flyasiana.com/C/KR/EN/contents/traveling-with-pets",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_006",
+      "airline_name_en": "Singapore Airlines",
+      "url": "https://www.singaporeair.com/en_UK/sg/travel-info/special-assistance/travelling-with-pets/",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_007",
+      "airline_name_en": "Cathay Pacific",
+      "url": "https://www.cathaypacific.com/cx/en_JP/prepare-trip/help-for-passengers/travelling-with-animals/overview-cargo.html",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_008",
+      "airline_name_en": "EVA Air",
+      "url": "https://www.evaair.com/en-jp/fly-prepare/baggage/travelling-with-pets/",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_009",
+      "airline_name_en": "Lufthansa",
+      "url": "https://www.lufthansa.com/us/en/travelling-with-animals",
+      "source_language": "en"
+    },
+    {
+      "id": "pet_airline_010",
+      "airline_name_en": "United Airlines",
+      "url": "https://www.united.com/en/us/fly/travel/traveling-with-pets.html",
+      "source_language": "en"
+    }
+  ]
+}
